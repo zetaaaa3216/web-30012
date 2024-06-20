@@ -1,0 +1,136 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: medium;
+    background-color: #92aeb0;
+    /* 第一四界面为流体布局，二三五界面为固定布局 */
+}
+header{
+    height: 130px;
+    margin: 10px;
+    background-color: rgb(255, 187, 86);
+    background-image: url("./image/页眉图片1.jpg");
+    background-size: 450px;
+    background-repeat: no-repeat;
+}
+header img{  /*这是一张装饰图片 */
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    height: 100px;
+    width: auto;
+}
+nav{
+    height: 80px;
+    margin: 0px 10px;
+    background-color: rgb(255, 225, 179);
+    text-align: center;
+}
+/* 将导航栏列表强制转换为超链接形式 */
+nav li:hover,li.now{  
+    background-color: rgb(255, 211, 145);
+}
+.navitem{
+    display: inline-block; /* 内联元素，展示为一行 */
+    text-align: center;    
+    list-style: none; /* 去掉列表的圆点 */
+    padding: 0px 50px;
+    height: 80px;
+    line-height: 80px;
+}
+.navitem a{
+    text-decoration: none; /* 去掉超链接下划线 */
+    font-size: 1.7em;
+    color: #494949;
+}
+h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+h2{
+    font-size: 1.25em;
+}
+footer{
+    background-color: rgb(255, 187, 86);
+    height: 35px;
+    text-align: center;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;
+    font-size: 0.8em;
+}
+/* 上面为一级公用部分  区别为body是否设置固定宽度，页脚是否设置clear*/
+
+/* 主体表格部分 */
+div#tableContainer {
+    display: table;
+    border-spacing: 10px;
+}
+div#tableRow {
+    display: table-row;
+}
+section{
+    display: table-cell;
+    background-color: rgb(255, 235, 205);
+    font-size:        1.05em;
+    padding:          15px;
+    vertical-align: top;
+}
+/* 广告区 */
+aside{
+    display: table-cell;
+    font-size: 1.05em;
+    padding: 15px;
+    width: 25%;
+    vertical-align: top;
+    background-color: rgb(255, 235, 205);
+}
+aside img{
+    height: 270px;
+    width: auto;
+}
+aside h1{
+    font-size: 1.7em;
+    font-style: italic;
+    color: #4d1212;
+}
+/* 上面为二级公用部分 */
+
+section#explain {
+    width: 35%;
+}
+#main img{
+    height: 200px;
+    width: auto;
+    float: right;
+}
+#main h1{
+    padding-bottom: 10px;
+}
+/* 上面为首页专用部分 */
+
+section#music{
+    width: 35%;
+}
+#music img{
+    height: 100px;
+    width: auto;
+    position: fixed;
+    left: 0px;
+    top: 343px;  /* 这里考虑放在h1后面 130+80+3*10=240  (15pading+20margin)*2+33h1+240=343 */
+}
+#music li, #computer li{
+    padding: 5px;
+}
+span.software{
+    font-style: italic;
+    font-weight: bold;
+}
+section#computer{
+    width: 40%;
+}
+span#tele{
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline 2px;
+}
+/* 上面为其他爱好页专用部分 */

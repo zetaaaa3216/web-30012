@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style-235.css">
+    <link rel="stylesheet" href="./formstyle.css">
+</head>
+<body>
+    <header>
+        <img src="../image/页眉图片2.jpg" alt="装饰图片">
+    </header>
+    <nav>
+        <li class="navitem">
+            <a href="../index/index.html",title="首页">首页</a>
+        </li>
+        <li class="navitem">
+            <a href="../acg/acg.html",title="动漫和游戏">动漫和游戏</a>
+        </li>
+        <li class="navitem">
+            <a href="../goods/goods.html",title="收藏品展示">收藏品展示</a>
+        </li>
+        <li class="navitem">
+            <a href="../hobbies/hobbies.html",title="其他爱好">其他爱好</a>
+        </li>
+        <li class="navitem now">
+            <a href="../form/form.html",title="扩列表">扩列表</a>
+        </li>
+    </nav>
+    <div class="ad ad3">
+        <h1>本栏目由燕麦面包赞助播出</h1>
+        <img src="../image/全自动闯祸机.jpg" alt="全自动闯祸机">
+        <p>现在下单, 还送猫爬架和猫包!</p>
+        <p>心动不如行动!</p>
+        <p>不要99, 不要199, 不要1999</p>
+        <p>只要4999!</p>
+        <br>
+    </div>
+    <form action="../index/index.html">
+        <h1>这是扩列表, 请填写您的信息, 我会去加您好友!</h1>
+        <br>
+        <div id="tableContainer">
+            <div id="tableRow">
+                <label for="cn">您尊贵的cn : </label>
+                <input type="text" name="cn">
+            </div>
+            <div id="tableRow">
+                <label for="software">您扩微信还是QQ : </label>
+                <p>
+                    <input type="radio" id="vx" name="software" value="vx">
+                        <label for="vx">微信</label><br><br>
+                    <input type="radio" id="qq" name="software" value="qq">
+                        <label for="qq">QQ</label>
+                </p>
+            </div>
+            <div id="tableRow">
+                <label for="num">您的微信/QQ号 : </label>
+                <input type="text" name="number">
+            </div>
+            <div id="tableRow">
+                <label for="num">您感兴趣的方面 : </label>
+                <p>
+                    <input type="checkbox" id="1" name="type" value="anime"> 
+                        <label for="1">动漫</label><br><br>
+                    <input type="checkbox" id="2" name="type" value="game">
+                        <label for="2">游戏</label><br><br>
+                    <input type="checkbox" id="3" name="type" value="music">
+                        <label for="3">音乐</label><br><br>
+                    <input type="checkbox" id="4" name="type" value="cat">
+                        <label for="4">燕麦</label><br><br>
+                    <input type="checkbox" id="5" name="type" value="extra">
+                        <label for="5">其他</label>
+                </p>
+            </div>
+            <div id="tableRow">
+                <label>提交成功跳转至首页</label>
+                <input type="submit" value="提交">
+            </div>
+        </div>
+    </form>
+    <footer>
+        &copy; 2024, 老疯猫频道<br>
+        本网页上的所有内容均来自于本人. 本网页最终解释权归燕麦所有.
+    </footer>
+</body>
+</html>

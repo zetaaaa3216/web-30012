@@ -1,0 +1,133 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: medium;
+    background-color: #92aeb0;
+    width: 1377px;  
+    /* 第一四界面为流体布局，二三五界面为固定布局 */
+}
+header{
+    height: 130px;
+    margin: 10px;
+    background-color: rgb(255, 187, 86);
+    background-image: url("./image/页眉图片1.jpg");
+    background-size: 450px;
+    background-repeat: no-repeat;
+}
+header img{ /*这是一张装饰图片 */
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    height: 100px;
+    width: auto;
+}
+nav{
+    height: 80px;
+    margin: 0px 10px;
+    background-color: rgb(255, 225, 179);
+    text-align: center;
+}
+/* 将导航栏列表强制转换为超链接形式 */
+nav li:hover,li.now{  
+    background-color: rgb(255, 211, 145);
+}
+.navitem{
+    display: inline-block; /* 内联元素，展示为一行 */
+    text-align: center;    
+    list-style: none; /* 去掉列表的圆点 */
+    padding: 0px 50px;
+    height: 80px;
+    line-height: 80px;
+}
+.navitem a{
+    text-decoration: none; /* 去掉超链接下划线 */
+    font-size: 1.7em;
+    color: #494949;
+}
+h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+h2{
+    font-size: 1.25em;
+}
+footer{
+    background-color: rgb(255, 187, 86);
+    height: 35px;
+    text-align: center;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;
+    font-size: 0.8em;
+    clear: both; /* 注意要清除浮动元素 */
+}
+/* 上面为一级公用部分  区别为body是否设置固定宽度，页脚是否设置clear*/
+
+/* 广告区 */
+.ad {
+    float: right;
+    width: 280px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 1.05em;
+    background-color: rgb(255, 235, 205);
+}
+.ad img{
+    height: 270px;
+    width: auto;
+}
+.ad h1{
+    font-size: 1.7em;
+    font-style: italic;
+    color: #4d1212;
+    margin: 23.705px 0px;
+}
+/* 表格单元格 */
+table{
+    border-collapse: collapse; 
+}
+th{
+    border: 2px solid rgb(0, 0, 0); 
+    background-color: #dafdff;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 2px;
+}
+td{
+    border: 1px solid rgb(0, 0, 0); 
+    text-align: center;
+}
+/* 上面为二级公用部分 */
+#anime,#game,#ex,#goods{
+    float: left;
+    width: 1007px;  /* body1377-左右margin20-广告区本体280-左右padding30-广告区左边margin10-左右padding30 = 1007 */
+    margin: 10px 0px 10px 10px;
+    padding: 15px;
+    background-color: rgb(255, 235, 205);
+}
+#game,#ex{
+    margin-top: 0px;
+}
+#anime{
+    height: 920px;
+}
+#game{
+    height: 425px;
+}
+#ex{
+    height: 360px;
+}
+.ad1{
+    height: 1785px; /* 920+425+360+3个上下padding90+中间两个margin20-padding30 = 1785*/
+}
+
+#goods,.ad2{
+    height: 2967px;
+}
+#goods img{
+    width: 500px;
+    height: auto;
+    margin: 5px;
+}
+#goods th,#goods td{
+    padding: 5px;
+}
